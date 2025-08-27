@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishmael UX/UI Designer Portfolio</title>
+    <meta name="description" content="UX/UI Designer specializing in user research, accessibility, and designing digital products that solve real problems.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+
+    <div class="nav-logo">
+            <img src="Pic/IMG-20240411-WA0042.jpg" alt="Ishmael Akuteye Logo" class="logo-img" />
+        <span>Ishmael Akuteye</span>
+    </div>
+            <div class="nav-menu">
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-overlay"></div> <!-- dark overlay for readability -->
+  <div class="hero-content">
+    <h1 class="hero-title">
+  Designing with heart to<br>
+  <span class="text-primary animate-text">touch lives and inspire action</span>
+</h1><p class="hero-description animate-right">
+  I craft interfaces that are not only beautiful, but also meaningful — making digital products more human, inclusive, and impactful.
+</p>
+    <div class="hero-buttons">
+      <button class="btn btn-primary" onclick="scrollToSection('work')">View My Work</button>
+      <button class="btn btn-outline" onclick="scrollToSection('contact')">Get in Touch</button>
+    </div>
+  </div>
+</section>
+
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Selected Work</h2>
+                <p class="section-description">
+                    A collection of wireframes, prototypes, user research, and accessibility improvements
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="wireframes">Wireframes</button>
+                <button class="filter-btn" data-filter="prototypes">Prototypes</button>
+                <button class="filter-btn" data-filter="research">User Research</button>
+                <button class="filter-btn" data-filter="accessibility">Accessibility</button>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="project-grid" id="projectGrid">
+                <!-- Projects will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="about-paragraphs">
+                        <p>
+                            I'm a UX/UI designer with 6+ years of experience creating digital experiences 
+                            that are both beautiful and accessible. My background in psychology informs 
+                            my user-centered approach to design.
+                        </p>
+                        <p>
+                            I specialize in user research, accessibility audits, and creating design 
+                            systems that scale. I believe great design should work for everyone, 
+                            regardless of their abilities or circumstances.
+                        </p>
+                        <p>
+                            When I'm not designing, you'll find me mentoring junior designers, 
+                            contributing to open-source accessibility tools, or exploring new cities 
+                            with my camera.
+                        </p>
+                    </div>
+                    
+                    <div class="skills-section">
+                        <h3 class="skills-title">Skills & Expertise</h3>
+                        <div class="skills-grid">
+                            <div class="skills-column">
+                                <div class="skill-item">User Research</div>
+                                <div class="skill-item">Wireframing</div>
+                                <div class="skill-item">Prototyping</div>
+                                <div class="skill-item">Accessibility</div>
+                            </div>
+                            <div class="skills-column">
+                                <div class="skill-item">Design Systems</div>
+                                <div class="skill-item">Usability Testing</div>
+                                <div class="skill-item">Information Architecture</div>
+                                <div class="skill-item">Visual Design</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="Pic/IMG-20241219-WA0057[1].jpg" 
+                         alt="Professional headshot of UX designer Ishmael Akuteye">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">
+                    I'm always interested in new projects and collaborations. 
+                    Let's discuss how we can create something amazing together.
+                </p>
+                
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>kaajaiishmael@gmail.com</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>@Ishmaelakuteye</p>
+                    </div>
+                    
+                    
+                </div>
+                
+                <button class="btn btn-primary contact-cta">
+                    <i class="fas fa-envelope"></i>
+                    Send me a message
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Alex Morgan. All rights reserved. Designed with accessibility in mind.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
